@@ -6,6 +6,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    console.log("test push");
+
     this.filterOptions = [
       { value: 'chocolate', label: 'Chocolate' },
       { value: 'strawberry', label: 'Strawberry' },

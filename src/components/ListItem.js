@@ -1,19 +1,17 @@
 import React from 'react';
 import Select from 'react-select';
-import './App.css';
+// import './App.css';
 
-class App extends React.Component {
+class ListItem extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <li
-        key={iceCream.id}
-      >{iceCream.flavor}</li>
+      <li>List Item!</li>
     );
   }
 }
 
-export default App;
+export default ListItem;

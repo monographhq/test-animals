@@ -1,6 +1,5 @@
 import React from 'react';
 import Select from 'react-select';
-// import '../App.css';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -9,22 +8,33 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
+      <nav className="menu">
+        <ul className="menu__list">
+          <li className="menu__item">
+            <label className="menu__label">Filter</label>
             <Select
-              value={null}
+              value={{ label: "All Animals", value: "" }}
               onChange={() => console.log("filter")}
-              options={[]}
-              className="menu__link"
+              options={[
+                { label: "All Animals", value: "" },
+                { label: "Carnivores", value: "carnivore" },
+                { label: "Herbivores", value: "herbivore" },
+                { label: "Omnivores", value: "omnivore" },
+              ]}
+              className="menu__dropdown"
             />
           </li>
-          <li class="menu__item">
+          <li className="menu__item">
+            <label className="menu__label">Sort</label>
             <Select
-              value={null}
+              value={{ label: "Name", value: "name" }}
               onChange={() => console.log("sort")}
-              options={[]}
-              className="menu__link"
+              options={[
+                { label: "Name", value: "name" },
+                { label: "Type", value: "type" },
+                { label: "Diet", value: "diet" },
+              ]}
+              className="menu__dropdown"
             />
           </li>
         </ul>

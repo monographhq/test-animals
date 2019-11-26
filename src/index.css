@@ -19,21 +19,14 @@ body {
   margin: 0;
 }
 .menu__item {
-  margin: 0 1.5rem;
+  margin: 1rem 1.5rem;
   min-width: 8rem;
 }
-.menu__link {
-  display: block;
-  color: #A0A8AE;
-  padding: 1.25rem 0;
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.0375em;
-  text-decoration: none;
-  transition: color 160ms ease-in-out;
-}
-.menu__link:hover {
+.menu__label {
   color: white;
+  font-weight: 700;
+}
+.menu__dropdown {
+  padding-top: 0.5rem;
+  min-width: 10rem;
 }

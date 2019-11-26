@@ -18,7 +18,7 @@ class App extends React.Component {
       { id: 7, name: "Surgeonfish", type: "fish",    diet: "herbivore" },
       { id: 8, name: "Swan",        type: "bird",    diet: "carnivore" },
       { id: 9, name: "Tortoise",    type: "reptile", diet: "herbivore" },
-    ]
+    ];
 
     this.state = {
       // 
@@ -30,7 +30,7 @@ class App extends React.Component {
       <div>
         <NavBar />
         <ul>
-          {/* put ListItems here */}
+          {/* put <ListItem>s here */}
         </ul>
       </div>
     );

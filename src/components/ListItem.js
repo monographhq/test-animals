@@ -1,17 +1,7 @@
-import React from 'react';
-import Select from 'react-select';
-// import './App.css';
+import React from "react";
 
-class ListItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <li>List Item!</li>
-    );
-  }
+function ListItem() {
+  return <li>List Item!</li>;
 }
 
 export default ListItem;
